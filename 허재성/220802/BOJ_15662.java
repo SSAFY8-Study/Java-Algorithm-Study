@@ -14,7 +14,6 @@ import java.util.StringTokenizer;
  * @memo 하나의 톱니바퀴를 회전시켰을 때 인접한 톱니바퀴를 시작으로 다른 톱니바퀴들도 회전시킬지 결정해야함
  * @memo 14891과 달리 톱니바퀴 개수가 최대 1000개라 반복문으로 처리가 필요함. 이전 문제도 그렇게 풀어서 어렵진 않았음.
  * @memo indexing, 문제 조건 등 주의, 톱니바퀴는 0~T-1번임. 1~T번이 아님에 주의
- * @etc 응용문제 https://www.acmicpc.net/problem/15662 
  *  
  */
 public class BOJ_15662 {
