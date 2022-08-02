@@ -1,11 +1,24 @@
-package algo220801.study;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Q14891 {
+/**
+ * 
+ * @author koreii
+ * @see https://www.acmicpc.net/problem/14891
+ * @difficuly Gold5
+ * @performance 11632KB   80ms
+ * @category # 단순 구현, 시뮬레이션
+ * @memo 톱니바퀴를 배열로 표현하는 것, 하나의 톱니바퀴의 회전을 모듈로 구현하는 것
+ * @memo 하나의 톱니바퀴를 회전시켰을 때 인접한 톱니바퀴를 시작으로 다른 톱니바퀴들도 회전시킬지 결정해야함
+ * @memo 톱니바퀴가 4개라 hard coding도 가능하지만 임의의 개수일 경우 불가하므로 처리방법 필요
+ * @memo indexing, 문제 조건 등 주의
+ * @etc 응용문제 https://www.acmicpc.net/problem/15662 
+ *  
+ */
+
+public class BOJ_14891 {
 	static char[][] gears = new char[4][8];
 	static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 	static StringTokenizer tokens;
