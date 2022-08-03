@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class palindrome_1254 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);    
 		char[] input = sc.next().toCharArray();
 		int pivot = -1;
 		for(int i=0; i<input.length; i++) {
