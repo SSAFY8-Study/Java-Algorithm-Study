@@ -1,4 +1,4 @@
-<!-- 팀별 문제는 이름까지 쓰지 않고, [[#번호]]() <- 이러한 형식으로 문제 추가해주기 !! -->
+<!-- 팀별 문제는 [[#번호]]() <- 이러한 형식으로 문제 추가해주기 !! -->
 <!-- 팀별 차수, 유형 문항은 비워두기 -->
 <!-- 공통 문제1️⃣, 공통 문제2️⃣, 스터디 완료 문항은 O/X로 표시 -->
 
@@ -12,7 +12,7 @@
 
 | 차수 | 팀 | 유형 | 공통 문제1️⃣ | 공통 문제2️⃣ | 팀별 문제 | 스터디 완료 |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| 1주차 | 공통 | 구현, 브루트포스 | [BOJ #14891 톱니바퀴](https://www.acmicpc.net/problem/14891) | [BOJ #1254 팰린드롬 만들기](https://www.acmicpc.net/problem/1254) | --- | --- |
+| 1주차 | 공통 | 구현, 브루트포스 | [#14891](https://www.acmicpc.net/problem/14891) | [#1254](https://www.acmicpc.net/problem/1254) | --- | --- |
 | --- | [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- | | | |
 | --- | [2팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/2%EC%A1%B0) | --- | | | |
 | --- | [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | | | |
