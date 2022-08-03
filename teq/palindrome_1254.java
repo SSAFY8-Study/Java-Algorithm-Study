@@ -1,9 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
 /**
  * 
- * @author TEQ
+ * @author TEQ   
  * @see https://www.acmicpc.net/problem/1254
  * @performance 17576	200
  * @category 단순구현
