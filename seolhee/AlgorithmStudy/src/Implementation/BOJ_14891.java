@@ -54,7 +54,6 @@ public class BOJ_14891 {
 				else dirs[j] = -dirs[j-1];
 			}
 			
-			System.out.println(Arrays.toString(dirs));
 			spin(); // 각 톱니 회전
 		}
 		
@@ -68,12 +67,3 @@ public class BOJ_14891 {
 	}
 
 }
-/*
- * 10101111
-01111101
-11001110
-00000010
-2
-3 -1
-1 1
- */
