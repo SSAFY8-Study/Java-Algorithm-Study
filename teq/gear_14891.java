@@ -1,5 +1,3 @@
-package algo;
-
 import java.util.Scanner;
 
 public class gear_14891 {
