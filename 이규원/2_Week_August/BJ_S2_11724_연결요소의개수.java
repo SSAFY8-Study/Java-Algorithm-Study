@@ -13,6 +13,16 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+/**
+ * 
+ * @author kyulee
+ * @category BFS - 무방향그래프
+ * @performance 181628kb	756ms
+ * @memo 만약 1 2 3노드가 존재하고, 3 - 2, 1 - 2이렇게 간선의 입력을 줬을 때, 2 ->1로 넘억가지 않을 수 있으므로
+ * 		양방향으로 입력을 줘야한다. 또한 간선이 없는 경우도 있을 수 있으므로 모두 방문했는지 확인해서 이를 해결해야 한다.
+ *
+ */
+
 public class BJ_S2_11724_연결요소의개수 {
 	static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 	static HashMap<Integer, Queue<Integer>> graph = new HashMap<Integer, Queue<Integer>>();	
