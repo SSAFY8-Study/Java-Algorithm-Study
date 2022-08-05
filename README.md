@@ -15,5 +15,5 @@
 | 1주차 | 공통 | 구현, 브루트포스 | [#14891](https://www.acmicpc.net/problem/14891) | [#1254](https://www.acmicpc.net/problem/1254) | --- | --- |
 | --- | [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- | | | | |
 | --- | [2팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/2%EC%A1%B0) | --- | O | O | [#6550](https://www.acmicpc.net/problem/6550) | O |
-| --- | [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | | | | |
+| --- | [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | O| O| [#6550](https://www.acmicpc.net/problem/6550) | O |
 | --- | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- | | | | |
