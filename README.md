@@ -16,4 +16,4 @@
 | --- | [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- | O | O | [#14719](https://www.acmicpc.net/problem/14719) | O |
 | --- | [2팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/2%EC%A1%B0) | --- | O | O | [#6550](https://www.acmicpc.net/problem/6550) | O |
 | --- | [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | O| O| [#6550](https://www.acmicpc.net/problem/6550) | O |
-| --- | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- | | | | |
+| --- | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- | O | O | [#14888](https://www.acmicpc.net/problem/14888)| O |
