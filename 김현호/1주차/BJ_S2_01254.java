@@ -83,6 +83,7 @@ public class BJ_S2_01254 {
 			}
 		}
 
+		
 		System.out.println(answer);
 
 	}

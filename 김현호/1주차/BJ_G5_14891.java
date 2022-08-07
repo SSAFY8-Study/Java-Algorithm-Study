@@ -115,6 +115,7 @@ public class BJ_G5_14891 {
 				}
 			}
 
+			
 			for (int i = 1; i <= 4; i++) {
 				if (haveToMove[i] == 1) {
 					move(gears, i, 1);

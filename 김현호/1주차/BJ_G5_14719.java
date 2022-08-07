@@ -56,6 +56,7 @@ public class BJ_G5_14719 {
 				}
 			}
 		}
+		
 		// 오른쪽
 		for (int r = 0; r < h; r++) {
 			if (map[r][w - 1] == 1) {
