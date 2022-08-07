@@ -1,4 +1,3 @@
-package study2_08;
 /**
  * @author seungheecho
  * @number bj2667
