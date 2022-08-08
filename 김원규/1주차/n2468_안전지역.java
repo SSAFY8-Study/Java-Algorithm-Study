@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
  
 public class n2468_안전지역 {
- 
+  
 	static int max;
 	static int maxCnt;
 	static int[] dx = {0, 1, 0, -1};
