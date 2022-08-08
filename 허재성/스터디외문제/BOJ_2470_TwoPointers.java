@@ -22,7 +22,7 @@ import java.util.StringTokenizer;
  *  
  */
 
-public class BOJ_2470 {
+public class BOJ_2470_TwoPointers {
 	static int N;	//	용액 개수
 	static int[] solutions;	//	용액 배열
 	static int minSumAbs = Integer.MAX_VALUE;	//	두 용액의 합 중 가장 0의 가까운 값
