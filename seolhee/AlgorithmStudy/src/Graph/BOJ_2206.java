@@ -67,7 +67,7 @@ public class BOJ_2206 {
 		que = new ArrayDeque<>();
 		que.add(new int[]{0, 0, 1}); // {x좌표, y좌표, 벽을 부쉈는지 아닌지} (부순 경우 0, 부수지 않은 경우 1)
 		visited = new int[n][m][2];
-		visited[0][0][1] = 1; // z가 0인 자리는 부순 적 있는 경우, 1 자리는 한 번도 부순 적 없는 경우
+		visited[0][0][1] = 1; // [][][0]은 부순적 있는 경우, [][][1]은 부순적 없는 경우에 대한 누적 시간을 저장
 		
 		System.out.println(bfs());
 	}
