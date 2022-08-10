@@ -1,7 +1,6 @@
 package bj;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -34,15 +33,12 @@ public class BJ_13549_숨바꼭질3 {
 				int[] info = q.poll();
 				N=info[0];
 				visited[N]=true;
-				if(N==K) min=Math.min(min,info[1]);
-//				if(N==K) {
-//					System.out.println(info[1]);
-//					return;
-//				}
+				if(N==K) min=Math.min(min,info[1]); // 해당 위치에서의 가장 작은 소요시간
 				
-				if(N*2<100001 && !visited[N*2]) q.add(new int[] {N*2,info[1]});
+				if(N*2<100001 && !visited[N*2]) q.add(new int[] {N*2,info[1]}); 
 				if(N+1<100001 && !visited[N+1]) q.add(new int[] {N+1,info[1]+1});
 				if(N-1>=0 && !visited[N-1]) q.add(new int[] {N-1,info[1]+1});
+
 			}
 		}
 		System.out.println(min);
