@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * @since 2022. 8. 9.
  * @see
  * @performance
- * @category BFS by queue
+ * @category BFS by queue 
  * @note
  */
 public class break_wall_2206 {
