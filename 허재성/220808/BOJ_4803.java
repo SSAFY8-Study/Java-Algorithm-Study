@@ -12,8 +12,9 @@ import java.util.StringTokenizer;
  * @difficuly G4
  * @performance 62696KB   436ms
  * @category # 깊이우선탐색(DFS), 트리(Tree), 사이클 판별(Cycle)
- * @memo Two Pointers 문제를 많이, 여러번 풀어봐야 할 듯.
- * @etc  구현 자체는 Binary Search보다도 쉬움.
+ * @memo DFS 과정에서 부모 노드를 제외한 노드를 재방문하려 하면 Cycle로 판별했음
+ * @memo 사이클 유무로 트리 판별, 연결 요소(Connected Component), 포레스트(Forest)를 알아야 함
+ * @etc  
  *  
  */
 
