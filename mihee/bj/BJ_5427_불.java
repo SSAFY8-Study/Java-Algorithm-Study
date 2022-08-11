@@ -22,6 +22,7 @@ public class BJ_5427_불 {
 		T = Integer.parseInt(input.readLine());
 
 		TC: for (int t = 0; t < T; t++) {
+			// 초기화
 			tokens = new StringTokenizer(input.readLine());
 			w = Integer.parseInt(tokens.nextToken());
 			h = Integer.parseInt(tokens.nextToken());
@@ -30,6 +31,8 @@ public class BJ_5427_불 {
 			time = 0;
 			q = new LinkedList<int[]>();
 
+			// 불 위치, 상근이 위치 q에 넣어주기.
+			// 불이 옮겨진 칸 또는 이제 불이 붙으려는 칸으로 이동할 수 없으므로,불 위치부터 먼저 넣어줘서 탐색!
 			int pR = 0, pC = 0;
 			for (int r = 0; r < h; r++) {
 				map[r] = input.readLine().split("");
@@ -37,15 +40,13 @@ public class BJ_5427_불 {
 					if (map[r][c].equals("@")) {
 						pR = r;
 						pC = c;
-					} else if (map[r][c].equals("*"))
-						q.add(new int[] { r, c, 1 });
+					} else if (map[r][c].equals("*")) q.add(new int[] { r, c, 1 }); // 1:불
 				}
 			}
-			q.add(new int[] { pR, pC, 0 });
+			q.add(new int[] { pR, pC, 0 }); //0:상근이
 			
 			while (q.size() > 0) {
-
-				time += 1;
+				time += 1; // 시간 측정
 				int size = q.size();
 				for (int j = 0; j < size; j++) {
 					int[] position = q.poll();
@@ -53,8 +54,7 @@ public class BJ_5427_불 {
 						for (int i = 0; i < deltas.length; i++) {
 							int nr = position[0] + deltas[i][0];
 							int nc = position[1] + deltas[i][1];
-							if (nr < 0 || nr >= h || nc < 0 || nc >= w)
-								continue;
+							if (nr < 0 || nr >= h || nc < 0 || nc >= w) continue;
 							if ((map[nr][nc].equals(".") || map[nr][nc].equals("@"))&&!visited[nr][nc]) {
 								map[nr][nc] = "*";
 								visited[nr][nc] = true;
@@ -62,11 +62,11 @@ public class BJ_5427_불 {
 							}
 						}
 
-					} else if (position[2] == 0) {
+					} else if (position[2] == 0) { // 상근이
 						for (int i = 0; i < deltas.length; i++) {
 							int nr = position[0] + deltas[i][0];
 							int nc = position[1] + deltas[i][1];
-							if (nr < 0 || nr >= h || nc < 0 || nc >= w) {
+							if (nr < 0 || nr >= h || nc < 0 || nc >= w) { // 탈출!
 								output.append(time + "\n");
 								continue TC;
 							}
