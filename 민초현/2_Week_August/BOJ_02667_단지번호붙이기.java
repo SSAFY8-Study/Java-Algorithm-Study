@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
-public class BOJ_02267_단지번호붙이기 {
+public class BOJ_02667_단지번호붙이기 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -22,6 +22,7 @@ public class BOJ_02267_단지번호붙이기 {
 		}
 		
 		List<Integer> cnt = new ArrayList<>();		// 각 단지의 집 갯수 저장할 리스트
+
 		Stack<int[]> s = new Stack<>();				// dfs에서 사용될 스택
 		int[] curPos = new int[2];					// 현재 stack에서 pop된 집의 좌표
 		int[] nxtPos = new int[2];					// dfs에서 사용될 다음 좌표

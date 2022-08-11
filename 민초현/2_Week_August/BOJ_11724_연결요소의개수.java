@@ -20,7 +20,7 @@ public class BOJ_11724_연결요소의개수 {
 		// 각 노드 방문 여부 저장
 		boolean[] visited = new boolean[n];
 		
-		// 양방향 그래프
+		// 양방향 그래프; graph[1] = [1과 연결된 노드]
 		List<Integer>[] graph = new ArrayList[n];
 		
 		// 그래프 연결 관계 저장.

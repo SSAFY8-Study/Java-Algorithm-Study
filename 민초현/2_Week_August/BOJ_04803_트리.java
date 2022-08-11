@@ -26,6 +26,8 @@ public class BOJ_04803_트리 {
 		
 		return true;
 	}
+
+
 	public static void main(String[] args) throws IOException {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder output = new StringBuilder();
