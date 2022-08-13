@@ -14,7 +14,8 @@ import java.util.StringTokenizer;
 @performance
 @difficulty Gold4
 @category #그래프 #트리
-@note */
+@note boolean의 초기값은 false..
+*/
 public class BOJ_04803 {
 
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -22,7 +23,7 @@ public class BOJ_04803 {
 	static StringTokenizer tokens;
 	static ArrayList<ArrayList<Integer>> graph;
 	static boolean[] visited ;
-	static boolean flag;
+	static boolean flag = true;
 	static int cnt; //트리 개수
 
 	public static void main(String[] args) throws IOException {
@@ -85,10 +86,12 @@ public class BOJ_04803 {
 		
 		for(int i=0; i<graph.get(index).size(); i++) {
 			int a = graph.get(index).get(i);
+			//System.out.println(index+ " : "+ prev + " : "+ a);
 			if(!visited[a]) {
 				dfs(a, index);
 			}
 			else if(visited[a] && a!=prev) { //방문했던 곳이고 부모가 아닌걸 가리키고 있다면 -> 사이클임
+				//만약 a=자식을 가리키고 있었다면 dfs 특성상 자식을 먼저 탐색했기 때문에 visited[a]=false였을 것이다. /즉, visited[a]=true인 경우는 부모이거나 사이클이 발생한 경우??
 				flag = false;
 			}
 		}
