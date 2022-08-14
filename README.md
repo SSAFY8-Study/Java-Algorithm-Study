@@ -18,7 +18,7 @@
 | --- | [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | O | O | [#6550](https://www.acmicpc.net/problem/6550) | O |
 | --- | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- | O | O | [#14888](https://www.acmicpc.net/problem/14888)| O |
 | 2주차 | 공통 | BFS/DFS, BackTracking | [#4803](https://www.acmicpc.net/problem/4803) | [#2206](https://www.acmicpc.net/problem/2206) | --- | --- |
-| --- | [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- |  |  |  |  |
+| --- | [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- | O | O |  |  |
 | --- | [2팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/2%EC%A1%B0) | --- | O | O | [#13549](https://www.acmicpc.net/problem/13549) [#5427](https://www.acmicpc.net/problem/5427) | O |
 | --- | [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- |  |  | |  |
 | --- | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- |  |  | |  |
