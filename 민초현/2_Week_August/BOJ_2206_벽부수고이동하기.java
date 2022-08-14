@@ -21,11 +21,13 @@ public class BOJ_2206_벽부수고이동하기 {
 			field[i] = input.readLine().toCharArray();
 		
 		int[][] deltas = {{1,0}, {-1,0}, {0,1}, {0,-1}};
-		boolean[][][] visited = new boolean[n][m][2];
+
+		// visited[i][j] = {0번 부수고 (i, j)에 도착했을 때 이동 거리, 1번 부수고 (i, j)에 도착했을 때 이동거리}
+		boolean[][][] visited = new boolean[n][m][2];			
 		visited[0][0][0] = true;
 		
 		Queue<int[]> q = new ArrayDeque<>();
-		q.add(new int[] {0, 0, 1, 0});
+		q.add(new int[] {0, 0, 1, 0});	// (r, c). r, c, 현재까지 이동 거리, 부순 횟수
 		
 		int[] curPos = new int[4];
 		int r, c, dis, cnt;
