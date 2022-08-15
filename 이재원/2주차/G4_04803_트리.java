@@ -56,6 +56,7 @@ public class G4_04803_트리 {
 		System.out.println(sb);
 	}
 	
+	// 싸이클 있으면 true 반환 -> 트리가 아닌 그래프
 	static boolean isCycle(int cur, int prev) {
 		visited[cur] = true;
 		
@@ -65,6 +66,7 @@ public class G4_04803_트리 {
 					return true;
 				}
 			}
+			// 방문했었던 노드인데 바로 전 노드가 아님 -> 싸이클
 			else if(next != prev) {
 				return true;
 			}
