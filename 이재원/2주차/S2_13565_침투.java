@@ -23,12 +23,14 @@ public class S2_13565_침투 {
 		
 		visited = new boolean[M][N];
 		map = new char[M][];
+		
 		for(int i = 0; i < M; i++) {
 			map[i] = br.readLine().toCharArray();
 		}
 		
+		// 바깥쪽 흰색 격자들에서 dfs
 		for(int c = 0; c < N; c++) {
-			if(!visited[0][c]) {
+			if(!visited[0][c] && map[0][c] == '0') {
 				dfs(0, c);
 			}
 		}
@@ -37,7 +39,8 @@ public class S2_13565_침투 {
 	}
 	
 	static void dfs(int r, int c) {
-		if(r == M-1) {
+		// 안쪽에 도달하거나 다른 전류가 이미 도달했으면 return
+		if(r == M-1 || ans.equals("YES")) {
 			ans = "YES";
 			return;
 		}
