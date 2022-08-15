@@ -32,11 +32,13 @@ public class G4_01967_트리의_지름 {
 			tree[b].add(new int[] {a, w});
 		}
 		
+		// 루트노드에서 가장 먼 노드 탐색 -> start에 대입
 		dist = new int[N+1];
 		Arrays.fill(dist, -1);
 		dist[1] = 0;
 		dfs(1);
-
+		
+		// start 노드로부터 가장 먼 노드 탐색
 		max = -1;
 		dist = new int[N+1];
 		Arrays.fill(dist, -1);
