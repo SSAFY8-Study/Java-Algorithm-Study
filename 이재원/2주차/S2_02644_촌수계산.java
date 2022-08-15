@@ -26,6 +26,7 @@ public class S2_02644_촌수계산 {
 		
 		dist = new int[N+1];
 		graph = new ArrayList[N+1];
+		
 		for(int i = 1; i <= N; i++) {
 			graph[i] = new ArrayList<>();
 		}
@@ -41,7 +42,10 @@ public class S2_02644_촌수계산 {
 			graph[q].add(p);
 		}
 		
+		// dist 배열에 a 노드로부터 각 노드까지의 최단거리 기록
+		// 따라서, dist[b]의 값이 a와 b의 촌수
 		bfs();
+		
 		if(dist[b] == 0) {
 			System.out.println(-1);
 		}
