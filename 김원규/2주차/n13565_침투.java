@@ -27,6 +27,7 @@ public class n13565_침투 {
 			}
 		}
 		
+		//맨위 행의 인덱스를 dfs로 넘겨준다, 어차피 닿기만 하면 되는 것이므로 따로 방문한 것을 되돌리지는 않는다
 		for(int i = 0; i < m; i++) {
 			if(map[0][i] == 0) {
 //				copyMap();
@@ -35,6 +36,7 @@ public class n13565_침투 {
 			}
 		}
 		
+		//맨 아래까지 닿았다면 예스 출력
 		if(check) System.out.println("YES");
 		else System.out.println("NO");
 
@@ -45,6 +47,7 @@ public class n13565_침투 {
 			int nx = x + dx[i];
 			int ny = y + dy[i];
 			
+			// 4방 탐색으로 내려가고(사실 3방이면 되겠다) 맨 아래 행을 만나면 체크해준다
 			if(nx >= 0 && ny >= 0 && nx < n && ny < m && map[nx][ny] == 0) {
 				map[nx][ny] = 1;
 				if(nx == n-1) check = true;
