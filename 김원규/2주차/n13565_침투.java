@@ -43,7 +43,7 @@ public class n13565_침투 {
 	}
 	
 	static void dfs(int x, int y) {
-		for(int i = 0; i < 4; i++) {
+		for(int i = 0; i < 3; i++) {
 			int nx = x + dx[i];
 			int ny = y + dy[i];
 			

@@ -89,7 +89,7 @@ public class n2644_촌수계산 {
 					}
 					else if(findAB) {
 						int cnt = 0;
-						//혹시 직계인지, 아니면 둘이 어디서 갈라졌는지 알아본다
+						//혹시 직계인지, 아니면 어디서 갈라졌는지 알아본다
 						for(int j = 0; j < listA.size(); j++) {
 							if(temp.get(j) != listA.get(j)) break;
 							cnt++;
