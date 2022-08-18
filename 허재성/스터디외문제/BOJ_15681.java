@@ -20,7 +20,7 @@ import java.util.StringTokenizer;
  *  
  */
 
-public class Main {
+public class BOJ_15681 {
 	static int N, R, Q;		//	트리 정점 개수, root 번호, 쿼리 개수
 	static int[] depth;		//	각 정점의 깊이(root = 0부터 자식으로 갈 수록 1씩 증가)
 	static int[] parents;	//	각 정점의 부모 정점 번호(root의 부모는 -1)
