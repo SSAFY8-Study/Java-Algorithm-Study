@@ -40,7 +40,7 @@ public class BJ_2206_벽부수고이동하기_2 {
             return;
         }
 		
-		q.offer(new int[]{0, 0, 0});
+		q.offer(new int[]{0, 0, 0});	//x, y, 벽뚫기 수행 여부
 		
 		while(!q.isEmpty()) {
 			int[] cur = q.poll();

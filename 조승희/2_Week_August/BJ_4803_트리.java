@@ -69,7 +69,7 @@ public class BJ_4803_트리 {
 
 	public static boolean dfs(int start, int num) {
         for (int i : arr[num]) {
-            if (i == start) continue;
+            if (i == start) continue;	
             if (visited[i]) return false;
             visited[i] = true;
             if (!dfs(num, i)) return false;
