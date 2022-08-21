@@ -1,4 +1,3 @@
-package 수업시간cover;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -18,56 +17,52 @@ import java.util.StringTokenizer;
  * 
  */
 
-public class BOJ_1697 {
+public class BOJ_16953 {
 
 	static BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 	static StringBuilder sb = new StringBuilder();
 	static StringTokenizer tokens;
+
+	static int A, B;
 	
-	static int N, K;
-	static boolean[] visited = new boolean[100001];
+	static boolean isIn(long num) {
+		return (1 <= num && num <= B);
+	}
+	
+	static int time = 1;
+	static int ans = -1;
 	
 	public static void main(String[] args) throws IOException {
 		tokens = new StringTokenizer(bf.readLine());
-		
-		N = Integer.parseInt(tokens.nextToken());
-		K = Integer.parseInt(tokens.nextToken());
+		A = Integer.parseInt(tokens.nextToken());
+		B = Integer.parseInt(tokens.nextToken());
 	
 		bfs();
-		System.out.println(time);
+		System.out.println(ans);
 	}
 	
-	static int time = 0;
 	static void bfs() {
-		Queue<Integer> q = new LinkedList<Integer>();
-//		visited[N] = true;
-		q.offer(N);
+		Queue<Long> q = new LinkedList<Long>();
+		q.offer((long)A);
 		
 		while(!q.isEmpty()) {
 			int size = q.size();
+			time++;
 			
 			for(int i = 0; i < size; i++) {
-				int cur = q.poll();
+				long cur = q.poll();
+				long[] nexts = {cur * 10 + 1, 2 * cur};
 				
-				visited[cur] = true;
-				if(cur == K) {
-					return;
-				}
-				
-				int[] delta = {cur - 1, cur * 2, cur + 1};
-				
-				for(int j = 0; j < 3; j++) {
-					int next = delta[j];
-					
-					if(next < 0 || next > 100000)
-						continue;
-					
-					if(!visited[next]) {
+				for(long next : nexts) {
+					if(isIn(next)) {
+						if(next == B) {
+							ans = time;
+							return;
+						}
 						q.offer(next);
 					}
 				}
 			}
-			time++;
 		}
 	}
 }
