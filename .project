@@ -5,6 +5,10 @@
 	<projects>
 	</projects>
 	<buildSpec>
+<<<<<<< HEAD
+	</buildSpec>
+	<natures>
+=======
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
@@ -19,5 +23,6 @@
 	<natures>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
+>>>>>>> branch '2조' of https://github.com/SSAFY8-Study/Java-Algorithm-Study.git
 	</natures>
 </projectDescription>
