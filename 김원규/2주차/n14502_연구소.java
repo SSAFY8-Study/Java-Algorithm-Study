@@ -24,7 +24,7 @@ public class n14502_연구소 {
 		m = Integer.parseInt(st.nextToken());
 		map = new int[n][m];
 		copy = new int[n][m];
-		virusList = new ArrayList<>();
+		virusList = new ArrayList<>(); 				// 바이러스의 위치를 저장해서 거기서부터 바이러스가 퍼지도록
 		
 		for(int i = 0; i < n; i++) {
 			str = bf.readLine();
@@ -40,6 +40,7 @@ public class n14502_연구소 {
 		System.out.println(max);
 	}
 	
+	// 바이러스는 BFS를 이용하여 퍼지도록 한다
 	static void virusBFS() {
 		Queue<Point> q = new LinkedList<>();
 		
@@ -62,6 +63,7 @@ public class n14502_연구소 {
 		safePlace();
 	}
 	
+	//안전지역 체크
 	static void safePlace() {
 		int count = 0;
 		
@@ -78,12 +80,14 @@ public class n14502_연구소 {
 	
 	// 벽 세우기
 	static void dfs(int b) {
+		// 세운 벽이 3개가 되면 바이러스가 퍼지도록
 		if(b == 3) {
 			copyMap();
 			virusBFS();
 			return;
 		}
 		
+		// dfs에 들어올 때마다 빈 곳에 벽을 세워준다
 		for(int i = 0; i < n; i++) {
 			for(int j = 0; j < m; j++) {
 				if(map[i][j] == 0) {

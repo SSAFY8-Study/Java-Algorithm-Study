@@ -60,22 +60,28 @@ public class n2644_촌수계산 {
 	}
 	
 	static int check(int root) {
+		// 큐에는 리스트를 담아준다
 		Queue<List<Integer>> q = new LinkedList<>();
 		
+		// 시작은 루트번호(최고조상)만 담은 리스트를 넣어준다
 		List<Integer> list = new LinkedList<>();
 		list.add(root);
 		q.add(list);
 		
+		// 혹시 A or B를 찾았다면 체크해준다
 		findAB = false;
+		// A or B를 찾은 후 카운트하여 둘의 차이를 알도록 한다
 		int count = 0;
 		List<Integer> listA = new LinkedList<>();
 		while(!q.isEmpty()) {
 			int len = q.size();
 			
 			if(findAB) count++;
+			// 트리의 레벨 단위로 진행하기 위해 현재 담겨져 있는 큐만큼 돌리기로 나눠준다
 			for(int l = 0; l < len; l++) {
 				List<Integer> temp = q.poll();
 				
+				//현재 템프가 A or B라면 체크 해주고, 혹시 하나를 찾은 상태에서 찾았다면 리턴해준다
 				if(temp.get(temp.size()-1) == a || temp.get(temp.size()-1) == b) {
 					if(!findAB) {
 						findAB = true;
@@ -83,11 +89,12 @@ public class n2644_촌수계산 {
 					}
 					else if(findAB) {
 						int cnt = 0;
+						//혹시 직계인지, 아니면 어디서 갈라졌는지 알아본다
 						for(int j = 0; j < listA.size(); j++) {
 							if(temp.get(j) != listA.get(j)) break;
 							cnt++;
 						}
-						
+						// 촌수 계산은 직계라면 그냥 카운트만 넘겨주면 되지만, 혹시 직계가 아니라면 그 차이에 2를 곱한만큼을 더해야 한다
 						return 2*(listA.size() - cnt) + count;
 					}
 				}
