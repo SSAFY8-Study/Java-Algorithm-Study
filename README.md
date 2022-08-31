@@ -30,10 +30,10 @@
 | 4주차 | DP | [#1149](https://www.acmicpc.net/problem/1149) | [#12865](https://www.acmicpc.net/problem/12865) | --- | --- |
 | [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- |  |  |  |  |
 | [2팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/2%EC%A1%B0) | --- |  |  |  |  |
-| [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | O | O | [#2293](https://www.acmicpc.net/problem/2293) [#5582](https://www.acmicpc.net/problem/5582)  | O |
+| [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | O | O | [#2293](https://www.acmicpc.net/problem/2293) [#2294](https://www.acmicpc.net/problem/2294) [#5582](https://www.acmicpc.net/problem/5582)  | O |
 | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- |  |  |  |  |
 | 5주차 | 보충 | --- | --- | --- | --- |
 | [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- |  |  |  |  |
 | [2팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/2%EC%A1%B0) | --- |  |  |  |  |
-| [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- |  |  |  |  |
+| [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- |  |  | [#3190](https://www.acmicpc.net/problem/3190) [#9084](https://www.acmicpc.net/problem/9084) [#21608](https://www.acmicpc.net/problem/21608)|  |
 | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- |  |  |  |  |
