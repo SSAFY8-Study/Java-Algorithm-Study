@@ -23,7 +23,7 @@
 | [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | O | O | [#2667](https://www.acmicpc.net/problem/2667) [#11724](https://www.acmicpc.net/problem/11724) | O |
 | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- | O | O | [#2468](https://www.acmicpc.net/problem/2468) [#9663](https://www.acmicpc.net/problem/9663) | O |
 | 3주차 | BFS/DFS, BackTracking | [#16197](https://www.acmicpc.net/problem/16197) | [#1987](https://www.acmicpc.net/problem/1987) | --- | --- |
-| [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- |  |  |  |  |
+| [1팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/1%EC%A1%B0) | --- | O | O |  |  |
 | [2팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/2%EC%A1%B0) | --- | O | O | [#6593](https://www.acmicpc.net/problem/6593) [#9466](https://www.acmicpc.net/problem/9466) [#12851](https://www.acmicpc.net/problem/12851) | O |
 | [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | O | O | [#6593](https://www.acmicpc.net/problem/6593)  [#16234](https://www.acmicpc.net/problem/16234)  [#11725](https://www.acmicpc.net/problem/11725) [#18352](https://www.acmicpc.net/problem/18352)| O |
 | [4팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/4%EC%A1%B0) | --- | O | O | [#13023](https://www.acmicpc.net/problem/13023)  [#5014](https://www.acmicpc.net/problem/5014) [#1326](https://www.acmicpc.net/problem/1326) | O |
