@@ -13,6 +13,6 @@
 | --- | 유형 | 공통 문제1️⃣ | 공통 문제2️⃣ | 팀별 문제 | 스터디 완료 |
 | :--: | :--: | :--: | :--: | :--: | :--: |
 | 1주차 | 2022 KAKAO TECH INTERNSHIP |  | | --- | --- |
-| [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | - | - | [#성격유형검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666) [#두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118666) | O |
+| [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | - | - | [#성격유형검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666) [#두큐합같게만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118666) | O |
 | 2주차 | 2022 KAKAO TECH INTERNSHIP |  | | --- | --- |
-| [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | - | - | [#등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669) [#코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) |  |
+| [3팀](https://github.com/SSAFY8-Study/Java-Algorithm-Study/tree/3%EC%A1%B0) | --- | - | - | [#등산코스정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669) [#코딩테스트공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) |  |
