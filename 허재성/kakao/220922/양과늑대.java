@@ -1,5 +1,20 @@
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author koreii
+ * @see https://school.programmers.co.kr/learn/courses/30/lessons/92343
+ * @difficuly LEVEL3
+ * @performance 86.6MBMB   2.98ms
+ * @category # DFS, 완전탐색
+ * @memo # 이진트리의 노드의 개수가 최대 17개(숫자가 매우 작으므로 완전탐색을 생각해볼 수 있음)
+ * @memo # 각 정점을 방문할 때마다 해당 정점이 양인지, 늑대인지 확인 후 방문 가능한지 check
+ * @memo # 방문 가능할 경우 다음 방문할 노드에서 현재 방문 노드는 제거하고, 현재 방문 노드의 자식 노드들을 방문할 노드에 추가
+ * @memo # 각 노드에 방문할 때마다 그 노드에 대하여 다음에 방문할 수 있는 노드를 따로 유지해야 함.
+ * @memo # ArrayList에서 int element를 제거할 경우 Integer로 변환 후 찾아서 제거해야 한다.  
+ * 
+ */
+
 class Solution {
 	int maxS = -1;
 	public int solution(int[] info, int[][] edges) {
@@ -23,8 +38,10 @@ class Solution {
 		ArrayList<Integer> tmp = (ArrayList<Integer>)nextVisit.clone();	//	다음에 방문할 정점들
 		
 		//	그냥 curNode로 넣으면 int로 받아서 index가 curNode인 것을 제거함.
-		tmp.remove(Integer.valueOf(curNode));	//	현재 방문한 정점은 제거
-		
+		// Integer node = curNode;
+        tmp.remove(new Integer(curNode));	//	현재 방문한 정점은 제거
+		// tmp.remove(curNode);
+
 		for(int i = 0; i < edges.length; i++) {
 			int parent = edges[i][0];	//	부모 정점
 			int child = edges[i][1];	//	자식 정점
