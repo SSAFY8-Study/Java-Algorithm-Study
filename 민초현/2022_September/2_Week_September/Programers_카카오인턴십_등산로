@@ -1,0 +1,79 @@
+import java.util.*;
+import java.io.*;
+
+class Solution {
+    public int[] solution(int n, int[][] paths, int[] gates, int[] summits) {
+        List<int[]> graph[] = new ArrayList[n+1];
+        for(int i =1; i<=n; i++)
+            graph[i] = new ArrayList<>();
+        
+        for(int[] path: paths){
+            graph[path[0]].add(new int[] {path[1], path[2]});
+            graph[path[1]].add(new int[] {path[0], path[2]});    
+        }
+        
+        // 산 정상 여부 배열
+        boolean[] isSummit = new boolean[n+1];
+        for(int s:summits){
+            isSummit[s] = true;
+        }
+        
+        boolean[] isGate = new boolean[n+1];
+        for(int g: gates){
+            isGate[g] = true;
+        }
+        
+        int[] ans = {n+1, 10000000};
+        // 현재 노드, 최대 가중치
+        PriorityQueue<Node> pq = new PriorityQueue<>();
+        
+        int[] visited = new int[n+1];
+        Arrays.fill(visited, 10000000);
+        
+        Arrays.sort(summits);
+        
+        for(int summit: summits){
+            pq.offer(new Node(summit, 0));
+            
+            visited[summit]=0;
+            
+            Node cur;
+            while(pq.size() > 0){
+                cur = pq.poll();        // cur[0]: 현재 노드. cur[1]: 현재 intensity
+                
+                if(isGate[cur.num]){   // 현재 노드가 게이트라면 가지 끝
+                    if(cur.wei < ans[1]) {
+                        ans[1] = cur.wei;
+                        ans[0] = summit;
+                    }
+                    break;      // 이번 턴 종료
+                }
+                
+                for(int[] adj: graph[cur.num]){
+                    int nxtW = (cur.wei <= adj[1]) ? adj[1] : cur.wei;
+                    
+                    if(nxtW < visited[adj[0]] && !isSummit[adj[0]]){
+                        visited[adj[0]] = nxtW;
+                        pq.offer(new Node(adj[0], nxtW));
+                    }
+                }
+            }
+        }
+        
+        return ans;
+    }
+    
+    public class Node implements Comparable<Node>{
+        int num, wei;
+        
+        public Node(int num, int wei){
+            this.num = num;
+            this.wei = wei;
+        }
+        
+        public int compareTo(Node n){
+            return Integer.compare(this.wei, n.wei);
+        }
+        
+    }
+}
